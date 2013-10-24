@@ -1,0 +1,13 @@
+realpath() of /home/ubuntu/code/uwsgi.ini failed: No such file or directory [core/utils.c line 3442]
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 1.9.18.2 (64bit) on [Tue Oct 22 11:43:20 2013] ***
+compiled with version: 4.7.3 on 21 October 2013 19:26:44
+os: Linux-3.8.0-19-generic #30-Ubuntu SMP Wed May 1 16:35:23 UTC 2013
+nodename: ip-172-31-20-146
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/code/onaserver
+detected binary path: /home/ubuntu/.virtualenvs/onaserver/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir(): No such file or directory [core/uwsgi.c line 2411]
