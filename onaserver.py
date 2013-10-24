@@ -43,7 +43,6 @@ def p():
 @jsonp
 def pageviews():
     periodStr = request.args.get('periodstr')
-    print periodStr
     res=analytics.generate_pageview_data(periodStr)
     return jsonify(res)
 

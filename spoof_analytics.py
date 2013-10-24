@@ -49,5 +49,4 @@ def generate_data(period,name,value,wobble):
     data[name]['x'] = [x+1 for x in range(units)]
     data[name]['y'] = [value + (wobble*(math.sin(math.pi*((x%7)/7.0)-0.5))) 
                 for x in data[name]['x']]
-    print period.lower(),start_date,units,data
     return data
