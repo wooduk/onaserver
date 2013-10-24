@@ -42,13 +42,17 @@ def p():
 @app.route('/analytics/pageviews',methods=['GET'])
 @jsonp
 def pageviews():
-    res=analytics.generate_pageview_data(30)
+    periodStr = request.args.get('periodstr')
+    print periodStr
+    res=analytics.generate_pageview_data(periodStr)
     return jsonify(res)
 
 @app.route('/analytics/timespent',methods=['GET'])
 @jsonp
 def timespent():
-    res=analytics.generate_timespent_data(30)
+    periodStr = request.args.get('periodstr')
+    print periodStr
+    res=analytics.generate_timespent_data(periodStr)
     return jsonify(res)    
     
 if __name__ == "__main__":
